@@ -5,7 +5,7 @@ import java.util.*;
 
 /**
  * ProblemaP2.java
- * Solución propuesta: dos grafos (fibra/coax), BFS tras cada arista, comparación de componentes por pares O(N^2).
+ * Solución propuesta: dos grafos (fibra/coax), BFS , comparación de componentes por pares 
  *
  * Autores: 
  * - Laura Sofia Sarmiento (202113056)

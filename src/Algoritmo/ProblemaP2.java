@@ -7,13 +7,12 @@ import java.util.*;
  * ProblemaP2.java
  * Solución con Union-Find
  *
- * Estrategia:
- *  - Mantener dos UF: uno para fibra (k=1) y otro para coax (k=2).
- *  - Tras cada conexión, hacer union en el UF adecuado.
- *  - Para decidir redundancia, para cada nodo u calcular (findFibra(u), findCoax(u)).
- *    La red es redundante si y solo si:
- *      * Para todo representante rF de fibra hay un único representante rC de coax con el que
- *        coinciden exactamente los mismos nodos y simétricamente para rC de coax.
+ * Soolución propuesta 2:
+ * 
+ * Mantener dos UF: uno para fibra (k=1) y otro para coax (k=2). Tras cada conexión, hacer union en el UF adecuado.
+ * 
+ * Para decidir redundancia, para cada nodo u calcular (findFibra(u), findCoax(u)). La red es redundante si y solo si:
+ * Para todo representante rF de fibra hay un único representante rC de coax con el que coinciden exactamente los mismos nodos y simétricamente para rC de coax.
  *
  * Autores: 
  * - Laura Sofia Sarmiento (202113056)
@@ -63,6 +62,7 @@ public class ProblemaP2 {
         }
     }
 
+    //Misma que en el de BFS
     static class lecturaEntradas {
         private final InputStream in;
         private final byte[] buffer = new byte[1 << 16];
@@ -167,7 +167,7 @@ public class ProblemaP2 {
 
     /**
      * Verifica si las particiones de fibra y coax son idénticas.
-     * Para cada nodo u, tomamos el par (rF(u), rC(u)). 
+     * Para cada nodo u, se toma el par (rF(u), rC(u)). 
      */
     static boolean verRedundancia(UF fibra, UF coax, int N) {
         // rF -> rC y rC -> rF 
