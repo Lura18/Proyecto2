@@ -16,7 +16,7 @@ import java.util.*;
  *
  * Autores: 
  * - Laura Sofia Sarmiento (202113056)
- * - Laura Fonseca ()
+ * - Laura Fonseca (202222197)
  * 
  * Curso: ISIS 1105 - Diseño y Análisis de Algoritmos
  * Semestre: 2025-20
