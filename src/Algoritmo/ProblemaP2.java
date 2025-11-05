@@ -3,24 +3,24 @@ package Algoritmo;
 import java.io.*;
 import java.util.*;
 
-import Algoritmo.ProblemaP2_BFS.lecturaEntradas;
-
 /**
  * ProblemaP2.java
  * Solución con Union-Find
  *
  * Estrategia:
- *  - Mantener dos DSU: uno para fibra (k=1) y otro para coax (k=2).
- *  - Tras cada conexión, hacer union en el DSU adecuado.
+ *  - Mantener dos UF: uno para fibra (k=1) y otro para coax (k=2).
+ *  - Tras cada conexión, hacer union en el UF adecuado.
  *  - Para decidir redundancia, para cada nodo u calcular (findFibra(u), findCoax(u)).
  *    La red es redundante si y solo si:
  *      * Para todo representante rF de fibra hay un único representante rC de coax con el que
  *        coinciden exactamente los mismos nodos y simétricamente para rC de coax.
  *
- * Entrada/Salida según enunciado.
- *
- * Autor(es): <edita con tus datos>
- * Curso: ISIS 1105 - Diseño y Análisis de Algoritmos (2025-20)
+ * Autores: 
+ * - Laura Sofia Sarmiento (202113056)
+ * - Laura Fonseca ()
+ * 
+ * Curso: ISIS 1105 - Diseño y Análisis de Algoritmos
+ * Semestre: 2025-20
  */
 public class ProblemaP2 {
 

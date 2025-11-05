@@ -100,11 +100,9 @@ public class ProblemaP2_BFS {
                 int k = entrada.nextInt();
 
                 if (k == 1) {
-                    // fibra
                     fibra[i].add(j);
                     fibra[j].add(i);
                 } else {
-                    // coax
                     coax[i].add(j);
                     coax[j].add(i);
                 }
@@ -125,14 +123,13 @@ public class ProblemaP2_BFS {
                 }
             }
 
-            // Imprimir línea del caso
             globalOut.append(line).append('\n');
         }
 
         System.out.print(globalOut.toString());
     }
 
-    // BFS: comp[u] = id de componente de u
+    // BFS
     static int[] construirComponentes(List<Integer>[] G, int N) {
         int[] comp = new int[N + 1];
         Arrays.fill(comp, -1); //inicialización
